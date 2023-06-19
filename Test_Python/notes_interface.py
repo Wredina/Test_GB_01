@@ -26,7 +26,6 @@ def user_interface():
         except ValueError:
             user_input = 7
             return user_input
-    # Заметка должна содержать идентификатор, заголовок, тело заметки и дату/время создания или последнего изменения заметки
     user_input = try_ex()
     while user_input != 6:
         if user_input == 1:
