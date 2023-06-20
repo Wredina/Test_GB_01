@@ -1,5 +1,3 @@
-
-
 import os
 from function_note import *
 from read_file_json import *
@@ -11,10 +9,10 @@ def user_interface():
     notes = read_file(file_json)
     os.system('cls')
     print('''1 - создать заметку
-2 - поиск заметки(по названию, дате, содержанию, идентификатору)
-3 - вывод всех заметок(с сортировкой и без)
-4 - редактирование заметки(название, содержание, изменение даты)
-5 - удаление заметки
+2 - поиск заметки
+3 - вывод всех заметок
+4 - редактирование заметки
+5 - удаление заметки 
 6 - выход''')
 
     def try_ex():
@@ -26,6 +24,7 @@ def user_interface():
         except ValueError:
             user_input = 7
             return user_input
+
     user_input = try_ex()
     while user_input != 6:
         if user_input == 1:
@@ -33,19 +32,19 @@ def user_interface():
         elif user_input == 2:
             search_info_note(notes)
         elif user_input == 3:
-            print_all_info_note()
+            print_all_info_note(notes)
         elif user_input == 4:
-            chenge_info_note()
+            chenge_info_note(notes, file_json)
         elif user_input == 5:
-            dell_info_note()
+            dell_info_note(notes, file_json)
         else:
             print('попробуйте ещё раз')
             sleep(2)
         os.system('cls')
         print('''1 - создать заметку
-2 - поиск заметки(по названию, дате, содержанию)
-3 - вывод всех заметок(с сортировкой и без)
-4 - редактирование заметки(название, содержание и изменение даты)
+2 - поиск заметки
+3 - вывод всех заметок
+4 - редактирование заметки
 5 - удаление заметки
 6 - выход''')
         user_input = try_ex()

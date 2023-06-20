@@ -5,16 +5,17 @@ from time import sleep
 def choise_func():
     print('''возможен поиск по данным:
   1 - id
-  2 - дата
-  3 - название заметки
-  4 - сожержит слово/словосочетание''')
-    try:
-        user_info = int(input("введите номер команды: "))
-        if type(user_info) == int:
-            return user_info
-    except ValueError:
-        user_info = 6
-        return user_info
+  2 - дата''')
+    user_info = int(input("введите номер команды: "))
+    return user_info
+
+
+def src_data():
+    print('''команды:
+1 - вывести все заметки за определённую дату
+2 - вывести все заметки за период включительно''')
+    choise = int(input("введите номер операции: "))
+    return choise
 
 
 def print_src_note(note):
