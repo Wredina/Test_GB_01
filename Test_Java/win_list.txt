@@ -1,0 +1,1 @@
+ 2. car (3,50)n  3. doll (5,00)n  3. doll (5,00)n  2. car (3,50)n  1. bear (2,00)n  2. car (3,50)n  3. doll (5,00)n  3. doll (5,00)n  2. car (3,50)n  3. doll (5,00)n  2. car (3,50)n  3. doll (5,00)n  1. bear (2,00)n  3. doll (5,00)n 
